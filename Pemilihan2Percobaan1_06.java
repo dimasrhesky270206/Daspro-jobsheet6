@@ -5,19 +5,19 @@ public class Pemilihan2Percobaan1_06 {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Masukkan tahun: ");
-        int tahun = sc.nextInt(); // Membaca input tahun dari pengguna
+        int tahun = sc.nextInt();
 
-        // Perbaikan logika tahun kabisat
-        if ((tahun % 400) == 0) {
-            System.out.println("Tahun Kabisat");
-        } else if ((tahun % 100) == 0) {
-            System.out.println("Bukan Tahun Kabisat");
-        } else if ((tahun % 4) == 0) {
-            System.out.println("Tahun Kabisat");
+        
+        if (tahun % 400 == 0) {
+            System.out.println("Tahun Kabisat"); 
+        } else if (tahun % 100 == 0) {
+            System.out.println("Bukan Tahun Kabisat"); 
+        } else if (tahun % 4 == 0) {
+            System.out.println("Tahun Kabisat"); 
         } else {
-            System.out.println("Bukan Tahun Kabisat");
+            System.out.println("Bukan Tahun Kabisat"); 
         }
 
-        sc.close(); // Menutup Scanner untuk mencegah kebocoran memori
+        sc.close();
     }
 }
